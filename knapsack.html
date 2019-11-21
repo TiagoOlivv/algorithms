@@ -3,7 +3,6 @@
 <html>
   <head>
     <meta charset="utf-8" />
-
     <title>Problema da Mochila</title>
   </head>
 
@@ -11,15 +10,25 @@
     div.a {
 	    text-align: center;
     }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+    }
+    th {
+      background-color: #676567;
+      color: white;
+      height: 50px;
+    }
+    table, th, td {
+      border-bottom: 1px solid #ddd;
+    }
   </style>
 
   <body>
-    <div class="a">
+    <div class="a" style="overflow-x:auto;">
         <h1>Problema da Mochila</h1>
-
-        <h3>Capacidade da Mochila: 20.</h3>
-    
-        <table border="1|1" align="center">
+        <br>
+        <table border='1|1' align="center">
           <tr>
             <th colspan="4">TABELA DE ITENS</th>
           </tr>
@@ -90,15 +99,11 @@
             <td>50</td>
           </tr>
         </table>
-    
-
-    
-
-    <h3>Itens Escolhidos:</h3>
-    <p id="itens"></p>
-  
-    <h3>Valor na Mochila:</h3>
-    <p id="valor"></p>
+      <h3>Capacidade da Máxima da Mochila: 20.</h3>
+      <h3>Itens Escolhidos:</h3>
+      <p id="itens"></p>
+      <h3>Valor na Mochila:</h3>
+      <p id="valor"></p>
     </div>
     <script src="knapsack.js"></script>
   </body>
